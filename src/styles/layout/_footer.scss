@@ -1,0 +1,125 @@
+footer {
+    .footer__wrapper {
+        background-color: #F98600;
+
+        .footer__flex {
+            max-width: 1554px;
+            margin: auto;
+            background-color: #fff;
+            display: flex;
+            padding: 35px 22px 10px;
+            justify-content: space-between;
+
+
+            h2 {
+                @include font-params (700, 32px, 39px);
+                margin-bottom: 23px;
+            }
+
+            .our-addresses {
+                display: flex;
+                flex-wrap: wrap;
+                width: 857px;
+
+                div {
+                    margin-bottom: 15px;
+
+                    &.address-margin {
+                        margin-right: 100px;
+                        width: 463px;
+                    }
+
+                    h3 {
+                        @include font-params (700, 24px, 29px);
+                        margin-bottom: 15px;
+                    }
+
+                }
+
+            }
+
+            p {
+                @include font-params (500, 24px, 29px);
+                margin-bottom: 15px;
+
+                span {
+                    margin-left: 15px;
+                }
+
+                &::before {
+                    display: inline-block;
+                    content: '';
+                    width: 40px;
+                    height: 40px;
+                    vertical-align: middle;
+                    margin-right: 15px;
+                }
+
+                &.address::before {
+                    background: url('../../../public/images/address-icon.svg') no-repeat center;
+                }
+
+                &.phone-number::before {
+                    background: url('../../../public/images/phone-icon.svg') no-repeat center;
+                }
+
+                &.working-hours::before {
+                    background: url('../../../public/images/working-hours-icon.svg') no-repeat center;
+                }
+
+                &.mail::before {
+                    background: url('../../../public/images/mail-icon.svg') no-repeat center;
+                }
+            }
+
+            .our-contacts {
+
+                div {
+                    margin-bottom: 38px;
+
+                    &.contacts {
+                        margin-bottom: 20px;
+                    }
+
+                    h2 {
+                        margin-bottom: 20px;
+                    }
+
+                    p {
+                        margin-bottom: 20px;
+                    }
+
+                    .mail,
+                    .phone-number {
+                        @include font-params (400, 28px, 34px);
+                    }
+
+                }
+
+                img {
+                    width: 225px;
+                    height: 167px;
+                    margin-left: 55px;
+                }
+
+            }
+        }
+    }
+
+    nav {
+        background: rgba(249, 134, 0, 0.4);
+
+        ul {
+            @include block-pos;
+            display: flex;
+            padding: 44px 0;
+
+            a {
+                margin-right: 65px;
+                li {
+                    @include font-params (400, 28px, 34px);
+                }
+            }
+        }
+    }
+}

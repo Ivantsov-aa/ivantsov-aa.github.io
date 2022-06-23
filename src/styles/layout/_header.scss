@@ -1,0 +1,60 @@
+header {
+    background: rgba(249, 134, 0, 0.5);
+    margin-bottom: 40px;
+
+    .header__wrapper {
+        @include block-pos;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 0 15px;
+        @include font-params (400, 24px, 29px);
+
+        nav {
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-right: 60px;
+            }
+
+            ul {
+                display: flex;
+
+                li {
+                    margin-right: 65px;
+                }
+            }
+        }
+
+        .header_buttons {
+            button {
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    vertical-align: middle;
+                    margin-right: 25px;
+                }
+
+                &.authorization_button {
+                    &::before {
+                        background-image: url('../../../public/images/user-logo.svg');
+                    }
+                }
+
+                &.cart_button {
+                    color: #FF0000;
+                    margin-left: 64px;
+                    &::before {
+                        background-image: url('../../../public/images/cart-logo.svg');
+                    }
+                }
+            }
+        }
+    }
+
+}

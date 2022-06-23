@@ -1,0 +1,12 @@
+$link_color: #000;
+
+@mixin block-pos {
+    max-width: 1710px;
+    margin: auto;
+}
+
+@mixin font-params ($weight, $size, $line-height) {
+    font-weight: $weight;
+    font-size: $size; 
+    line-height: $line-height;   
+}

@@ -1,0 +1,103 @@
+.search-form {
+    @include block-pos;
+    display: flex;
+    justify-content: space-between;
+
+    .search-form__params {
+        h2 {
+            @include font-params(500, 28px, 34px);
+            margin-bottom: 20px;
+        }
+
+        div {
+            display: flex;
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 17px;
+            }
+
+            input {
+                border: 1px solid #F98600;
+                border-radius: 5px;
+                outline: none;
+                width: 1096px;
+                height: 71px;
+                padding-left: 20px;
+                margin-right: 49px;
+                @include font-params(400, 20px, 24px);
+
+                &::placeholder {
+                    color: $link_color;
+                }
+            }
+
+            button {
+                border: 1px solid #F98600;
+                border-radius: 5px;
+                background-color: #F98600;
+                color: #fff;
+                width: 194px;
+                height: 71px;
+                @include font-params(400, 24px, 29px);
+            }
+
+            .select-wrapper {
+
+                select {
+                    outline: none;
+                    border: 1px solid #F98600;
+                    border-radius: 5px;
+                    height: 71px;
+                    width: 211px;
+                    @include font-params(400, 20px, 24px);
+                    margin-right: 11px;
+                    padding: 0 20px;
+                    appearance: none;
+
+                }
+
+                &:last-child {
+                    select {
+                        width: 215px;
+                    }
+                }
+
+                &::after {
+                    content: '';
+                    width: 20px;
+                    background: url('../../../../public/images/select-arrow.svg') no-repeat center;
+                    position: relative;
+                    left: -50px;
+                    top: 2px;
+                }
+
+            }
+        }
+
+    }
+
+    .search-form__back-call {
+        a {
+            @include font-params(400, 32px, 39px);
+            padding-left: 5px;
+
+            &::before {
+                content: '';
+                width: 40px;
+                height: 40px;
+                display: inline-block;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-image: url('../../../../public/images/back-call-logo.svg');
+                vertical-align: middle;
+                margin-right: 15px;
+                margin-bottom: 12px;
+            }
+        }
+
+        p {
+            @include font-params(500, 28px, 34px);
+        }
+    }
+}
