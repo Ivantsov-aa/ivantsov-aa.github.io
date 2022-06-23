@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0b60e12f.css",
+    "main.js": "/static/js/main.45f2da45.js",
+    "static/media/main-page-photo.png": "/static/media/main-page-photo.85c76657c971cfab92e0.png",
+    "static/media/back-call-logo.svg": "/static/media/back-call-logo.a149bd66505b80f44702.svg",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/add-to-cart.svg": "/static/media/add-to-cart.14ef30e73a072865290a.svg",
+    "static/media/cart-logo.svg": "/static/media/cart-logo.9195ab3bb4d7b265eddb.svg",
+    "static/media/phone-icon.svg": "/static/media/phone-icon.c52895f3cb8e0dd58887.svg",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/address-icon.svg": "/static/media/address-icon.ce6fac6d8fc2fc3ae398.svg",
+    "static/media/user-logo.svg": "/static/media/user-logo.3e5addd06676c462b7e2.svg",
+    "static/media/arrow-prev.svg": "/static/media/arrow-prev.cfa66b8cd3459952b3ac.svg",
+    "static/media/arrow-next.svg": "/static/media/arrow-next.fc6e3110ba2e9b3b74df.svg",
+    "static/media/mail-icon.svg": "/static/media/mail-icon.4ce75dc7de44350d083d.svg",
+    "index.html": "/index.html",
+    "static/media/working-hours-icon.svg": "/static/media/working-hours-icon.c789ea1dcc24d6fd24e9.svg",
+    "static/media/select-arrow.svg": "/static/media/select-arrow.7ec31814a14d8146821a.svg",
+    "main.0b60e12f.css.map": "/static/css/main.0b60e12f.css.map",
+    "main.45f2da45.js.map": "/static/js/main.45f2da45.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b60e12f.css",
+    "static/js/main.45f2da45.js"
+  ]
+}
