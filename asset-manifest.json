@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.9618d3ba.css",
+    "main.css": "/static/css/main.4ffdf88e.css",
     "main.js": "/static/js/main.7ea01310.js",
     "static/media/authorization-image.png": "/static/media/authorization-image.9e47db32dde459c5e98a.png",
     "static/media/main-page-photo.png": "/static/media/main-page-photo.85c76657c971cfab92e0.png",
@@ -17,19 +17,19 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "static/media/view-password.svg": "/static/media/view-password.7c20a7abd38b50ad4af6.svg",
     "static/media/user-logo.svg": "/static/media/user-logo.3e5addd06676c462b7e2.svg",
+    "index.html": "/index.html",
     "static/media/editor-icon.svg": "/static/media/editor-icon.e8c46709b694fcdda14d.svg",
     "static/media/arrow-prev.svg": "/static/media/arrow-prev.cfa66b8cd3459952b3ac.svg",
     "static/media/arrow-next.svg": "/static/media/arrow-next.fc6e3110ba2e9b3b74df.svg",
     "static/media/mail-icon.svg": "/static/media/mail-icon.4ce75dc7de44350d083d.svg",
-    "index.html": "/index.html",
     "static/media/working-hours-icon.svg": "/static/media/working-hours-icon.c789ea1dcc24d6fd24e9.svg",
     "static/media/private-icon.svg": "/static/media/private-icon.0221c920f519930bae27.svg",
     "static/media/select-arrow.svg": "/static/media/select-arrow.7ec31814a14d8146821a.svg",
-    "main.9618d3ba.css.map": "/static/css/main.9618d3ba.css.map",
+    "main.4ffdf88e.css.map": "/static/css/main.4ffdf88e.css.map",
     "main.7ea01310.js.map": "/static/js/main.7ea01310.js.map"
   },
   "entrypoints": [
-    "static/css/main.9618d3ba.css",
+    "static/css/main.4ffdf88e.css",
     "static/js/main.7ea01310.js"
   ]
 }
