@@ -1,0 +1,105 @@
+.terms-of-use__wrapper {
+    @include block-pos;
+    margin-bottom: 65px;
+
+    .title {
+        display: grid;
+        grid-template-columns: 281px 655px;
+        grid-column-gap: 247px;
+
+        h2,
+        p {
+            @include font-params (400, 36px, 44px);
+            margin-bottom: 6px;
+        }
+    }
+
+    .terms {
+        display: grid;
+        grid-gap: 9px 30px;
+        grid-template-columns: 840px 840px;
+        margin-bottom: 70px;
+
+        p {
+            @include font-params (400, 36px, 44px);
+            grid-column: 1;
+
+            &:first-child {
+                padding-top: 44px;
+            }
+
+            &:last-child {
+                grid-row: 2;
+            }
+        }
+
+        .general-provisions {
+            grid-column: 2;
+            grid-row: 1 / span 2;
+        }
+    }
+
+    .buttons {
+        text-align: center;
+
+        button {
+            margin: 0 35px;
+            @include font-params (500, 28px, 34px);
+            border-radius: 5px;
+            width: 385px;
+            padding: 20px 0;
+
+            &.load-more {
+                border: 1px solid #F98600;
+            }
+
+            &.apply-agreement {
+                background: #F98600;
+                color: #fff;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1919px) and (min-width: 1024px) {
+
+    .terms-of-use__wrapper {
+        @include block-pos-laptop;
+        margin-bottom: 40px;
+
+        .title {
+            grid-template-columns: 180px 400px;
+            grid-column-gap: 78px;
+
+            h2,
+            p {
+                @include font-params (400, 22px, 27px);
+                margin-bottom: 30px;
+            }
+        }
+
+        .terms {
+            grid-gap: 19px 35px;
+            grid-template-columns: 452px 453px;
+            margin-bottom: 40px;
+
+            p {
+                @include font-params (400, 22px, 27px);
+
+                &:first-child {
+                    padding-top: 0;
+                }
+            }
+        }
+
+        .buttons {
+            button {
+                margin: 0 20px;
+                @include font-params (500, 22px, 27px);
+                width: 270px;
+                padding: 16px 0;
+            }
+        }
+    }
+}

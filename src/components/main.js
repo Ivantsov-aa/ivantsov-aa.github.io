@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 
 import SearchForm from "./main/search-form";
@@ -6,6 +7,8 @@ import SearchForm from "./main/search-form";
 class Main extends React.Component {
     render() {
         const { popularProducts, news } = this.props;
+
+        const { innerWidth } = window;
 
         const settingsForService = {
             dots: false,
@@ -15,12 +18,30 @@ class Main extends React.Component {
             slidesToScroll: 1
         };
 
-        const settingsForNews = {
+        const settingsForProducts = {
+            dots: true,
+            arrows: false,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        }
+
+        const settingsForNewsBig = {
             dots: false,
             infinite: true,
             speed: 500,
             slidesToShow: 3,
             slidesToScroll: 3
+        };
+
+        const settingsForNewsSmall = {
+            dots: true,
+            arrows: false,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
         };
 
         return (
@@ -56,32 +77,34 @@ class Main extends React.Component {
                         <div className='main-bg'></div>
                     </div>
                 </section>
-                <section className='about-us'>
-                    <div>
-                        <h3>
-                            AutoDiamond <span>- один из лучших интернет магазинов в России!</span>
-                        </h3>
-                        <p>
-                            Занимаясь запчастями для китайских автомобилей, AutoDiamond готов предложить самый полный ассортимент и максимально подробное описание товаров из каталогов производителей
-                        </p>
-                    </div>
-                    <div>
-                        <img src='./images/quality-icon.svg' alt='quality-icon' />
-                        <h3>
-                            КАЧЕСТВО И ГАРАНТИЯ
-                        </h3>
-                        <p>
-                            Мы можем гарантировать качество нашей продукции
-                        </p>
-                    </div>
-                    <div>
-                        <img src='./images/support-icon.svg' alt='support-icon' />
-                        <h3>
-                            ПОДДЕРЖКА
-                        </h3>
-                        <p>
-                            Мы готовы ответить на все вопросы наших клиентов
-                        </p>
+                <section className='about-us__wrapper'>
+                    <div className='about-us'>
+                        <div>
+                            <h3>
+                                AutoDiamond <span>- один из лучших интернет магазинов в России!</span>
+                            </h3>
+                            <p>
+                                Занимаясь запчастями для китайских автомобилей, AutoDiamond готов предложить самый полный ассортимент и максимально подробное описание товаров из каталогов производителей
+                            </p>
+                        </div>
+                        <div>
+                            <img src='./images/quality-icon.svg' alt='quality-icon' />
+                            <h3>
+                                КАЧЕСТВО И ГАРАНТИЯ
+                            </h3>
+                            <p>
+                                Мы можем гарантировать качество нашей продукции
+                            </p>
+                        </div>
+                        <div>
+                            <img src='./images/support-icon.svg' alt='support-icon' />
+                            <h3>
+                                ПОДДЕРЖКА
+                            </h3>
+                            <p>
+                                Мы готовы ответить на все вопросы наших клиентов
+                            </p>
+                        </div>
                     </div>
                 </section>
                 <section className='about-us-add'>
@@ -141,22 +164,71 @@ class Main extends React.Component {
                                 </div>
                             </div>
                         ))}
+                        <div className='mobile-products__wrapper'>
+                            <Slider {...settingsForProducts}>
+                                {popularProducts.map((product, i) => (
+                                    <div className='product__wrapper' key={i}>
+                                        <div className='img-wrapper'>
+                                            <img src={product.image} alt='icon-product' />
+                                        </div>
+                                        <div className='product__description'>
+                                            <h4>
+                                                {product.name}
+                                            </h4>
+                                            <p>
+                                                Артикул: {product.sku}
+                                            </p>
+                                            <p>
+                                                Автозапчасть: {product.quality}
+                                            </p>
+                                            <p>
+                                                Производитель: {product.manuf}
+                                            </p>
+                                        </div>
+                                        <div className='product__footer'>
+                                            <p>
+                                                {product.price.toFixed(2)} руб.
+                                            </p>
+                                            <div>
+                                                <button className='decrement'></button>
+                                                <p>{product.quantity}</p>
+                                                <button className='increment'></button>
+                                            </div>
+                                            <button className='add-to-cart'></button>
+                                        </div>
+                                    </div>
+                                ))}
+                            </Slider>
+                        </div>
                     </div>
                 </section>
                 <section className='news-block'>
                     <h3>
                         Последние новости
                     </h3>
-                    <Slider {...settingsForNews}>
-                        {news.map((item, i) => (
-                            <div className='news-item' key={i}>
-                                <img src={item.logo} alt='news-logo' />
-                                <h4>{item.title}</h4>
-                                <p className='news-date'>{item.date}</p>
-                                <p>{item.article}</p>
-                            </div>
-                        ))}
-                    </Slider>
+                    {innerWidth >= 1024 ?
+                        <Slider {...settingsForNewsBig}>
+                            {news.map((item, i) => (
+                                <Link to={`/news/${item.path}`} className='news-item' key={i}>
+                                    <img src={item.logo} alt='news-logo' />
+                                    <h4>{item.title}</h4>
+                                    <p className='news-date'>{item.date}</p>
+                                    <p>{item.article}</p>
+                                </Link>
+                            ))}
+                        </Slider>
+                        :
+                        <Slider {...settingsForNewsSmall}>
+                            {news.map((item, i) => (
+                                <Link to={`/news/${item.path}`} className='news-item' key={i}>
+                                    <img src={item.logo} alt='news-logo' />
+                                    <h4>{item.title}</h4>
+                                    <p className='news-date'>{item.date}</p>
+                                    <p>{item.article}</p>
+                                </Link>
+                            ))}
+                        </Slider>
+                    }
                 </section>
             </main>
         )

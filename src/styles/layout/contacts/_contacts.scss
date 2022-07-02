@@ -1,0 +1,142 @@
+.contacts {
+    @include block-pos;
+    padding: 27px 0 70px;
+
+    .contacts-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 70px;
+
+        button {
+            @include font-params (400, 28px, 34px);
+            border-radius: 5px;
+            border: 1px solid #F98600;
+            padding: 15px 20px;
+            outline: none;
+
+            &.active {
+                background-color: #F98600;
+                color: #fff;
+            }
+        }
+    }
+
+    .addresses-wrapper {
+        display: grid;
+        grid-template-columns: 528px 528px 528px;
+        grid-template-rows: auto;
+        grid-gap: 20px 63px;
+        margin-bottom: 70px;
+
+        .addresses {
+            border-radius: 5px;
+            border: 1px solid #F98600;
+            padding: 25px;
+            height: 216px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            p {
+                @include font-params (400, 28px, 34px);
+            }
+        }
+    }
+
+    .map {
+        position: relative;
+        width: 1710px;
+        height: 638px;
+
+        .ymaps-2-1-79-map {
+            position: absolute;
+
+            .ymaps-2-1-79-balloon {
+                border: 1px solid #F98600;
+
+                .ymaps-2-1-79-balloon__content {
+                    height: 150px;
+                    box-sizing: border-box;
+
+                    h2 {
+                        margin-bottom: 10px;
+                        @include font-params (700, 24px, 31px);
+                    }
+
+                    h3 {
+                        @include font-params (500, 20px, 24px);
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        @include font-params (400, 20px, 24px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1919px) and (min-width: 1024px) {
+    .contacts {
+        @include block-pos-laptop;
+        padding: 27px 0 40px;
+
+        .contacts-wrapper {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+
+            button {
+                @include font-params (400, 16px, 19px);
+                border-radius: 5px;
+                border: 1px solid #F98600;
+                padding: 10px 20px;
+            }
+        }
+
+        .addresses-wrapper {
+            grid-template-columns: 279px 279px 279px;
+            grid-gap: 20px 43px;
+            margin-bottom: 40px;
+
+            .addresses {
+                padding: 20px 10px;
+                height: 150px;
+
+                p {
+                    @include font-params (400, 18px, 22px);
+                }
+            }
+        }
+
+        .map {
+            width: 924px;
+            height: 344px;
+
+            .ymaps-2-1-79-map {
+                .ymaps-2-1-79-balloon {
+                    .ymaps-2-1-79-balloon__content {
+                        width: 250px;
+
+                        h2 {
+                            margin-bottom: 10px;
+                            @include font-params (700, 20px, 24px);
+                        }
+
+                        h3 {
+                            @include font-params (500, 16px, 19px);
+                            margin-bottom: 10px;
+                            width: 210px;
+                        }
+
+                        p {
+                            @include font-params (400, 16px, 19px);
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

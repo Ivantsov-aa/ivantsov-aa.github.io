@@ -9,12 +9,12 @@
             margin-bottom: 20px;
         }
 
-        div {
+        >div {
             display: flex;
             margin-bottom: 15px;
 
             &:last-child {
-                margin-bottom: 17px;
+                margin-bottom: 34px;
             }
 
             input {
@@ -43,6 +43,8 @@
             }
 
             .select-wrapper {
+                margin-right: 31px;
+                position: relative;
 
                 select {
                     outline: none;
@@ -51,7 +53,6 @@
                     height: 71px;
                     width: 211px;
                     @include font-params(400, 20px, 24px);
-                    margin-right: 11px;
                     padding: 0 20px;
                     appearance: none;
 
@@ -64,12 +65,14 @@
                 }
 
                 &::after {
+                    display: inline-block;
                     content: '';
                     width: 20px;
+                    height: 20px;
                     background: url('../../../../public/images/select-arrow.svg') no-repeat center;
-                    position: relative;
-                    left: -50px;
-                    top: 2px;
+                    position: absolute;
+                    right: 20px;
+                    top: 25px;
                 }
 
             }
@@ -98,6 +101,187 @@
 
         p {
             @include font-params(500, 28px, 34px);
+        }
+    }
+}
+
+@media only screen and (max-width: 1919px) and (min-width: 1024px) {
+    .search-form {
+        @include block-pos-laptop;
+
+        .search-form__params {
+            padding-top: 5px;
+
+            h2 {
+                @include font-params (500, 20px, 24px);
+                margin-bottom: 10px;
+            }
+
+            >div {
+                margin-bottom: 10px;
+
+                &:last-child {
+                    margin-bottom: 20px;
+                }
+
+                input {
+                    width: 533px;
+                    height: 45px;
+                    @include font-params (400, 16px, 19px);
+                    margin-right: 15px;
+                    padding-left: 10px;
+                }
+
+                button {
+                    width: 139px;
+                    height: 43px;
+                    @include font-params (400, 20px, 24px);
+
+                }
+
+                .select-wrapper {
+                    margin-right: 8px;
+
+                    select {
+                        width: 172px;
+                        height: 43px;
+                        @include font-params (400, 16px, 19px);
+                        padding: 0 10px;
+                    }
+
+                    &::after {
+                        right: 10px;
+                        top: 12px;
+                    }
+
+                    &:last-child select {
+                        width: 172px;
+                    }
+                }
+            }
+        }
+
+        .search-form__back-call {
+            a {
+                @include font-params (400, 20px, 24px);
+
+                &::before {
+                    width: 30px;
+                    height: 30px;
+                    background-size: 30px;
+                    margin-bottom: 10px;
+                    margin-right: 10px;
+                }
+            }
+
+            p {
+                @include font-params (500, 20px, 24px);
+                text-align: center;
+                width: 207px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 300px) {
+    .search-form {
+        @include block-pos-mobile;
+        flex-direction: column-reverse;
+        padding-top: 98px;
+
+        .search-form__params {
+            h2 {
+                @include font-params(500, 16px, 19px);
+                margin-bottom: 10px;
+            }
+
+            >div {
+                display: flex;
+                margin-bottom: 10px;
+
+                &:last-child {
+                    margin-bottom: 22px;
+                }
+
+                input {
+                    width: 217px;
+                    height: 40px;
+                    padding-left: 5px;
+                    margin-right: 10px;
+                    @include font-params(400, 14px, 17px);
+                }
+
+                button {
+                    border: 1px solid #F98600;
+                    border-radius: 5px;
+                    background-color: #F98600;
+                    color: #fff;
+                    width: 103px;
+                    height: 40px;
+                    @include font-params(400, 16px, 19px);
+                }
+
+                .select-wrapper {
+                    margin-right: 10px;
+                    position: relative;
+
+                    &:last-child{
+                        margin: 0;
+                    }
+
+                    select {
+                        outline: none;
+                        height: 40px;
+                        width: 93px;
+                        @include font-params(400, 14px, 17px);
+                        padding: 0 5px;
+
+                    }
+
+                    &:last-child {
+                        select {
+                            width: 124px;
+                            padding: 0 17px 0 5px;
+                        }
+                    }
+                    
+                    &::after {
+                        width: 13px;
+                        height: 13px;
+                        background-size: 13px;
+                        right: 5px;
+                        top: 13px;
+                    }
+
+                }
+            }
+
+        }
+
+        .search-form__back-call {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 20px;
+            a {
+                @include font-params(400, 16px, 19px);
+                padding-left: 0;
+                margin-bottom: 10px;
+
+                &::before {
+                    width: 20px;
+                    height: 20px;
+                    background-size: 20px;
+                    margin-right: 15px;
+                    margin-bottom: 0;
+                }
+            }
+
+            p {
+                @include font-params(500, 16px, 19px);
+                width: 173px;
+            }
         }
     }
 }

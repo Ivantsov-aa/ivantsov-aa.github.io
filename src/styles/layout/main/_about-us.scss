@@ -1,8 +1,11 @@
+.about-us__wrapper {
+    @include block-pos;
+}
+
 .about-us {
     padding: 84px 0 28px;
     display: flex;
     justify-content: space-between;
-    @include block-pos;
 
     div {
         width: 393px;
@@ -23,7 +26,7 @@
         }
 
         img {
-            margin-bottom: 45px;
+            margin-bottom: 35px;
         }
 
         h3 {
@@ -46,20 +49,188 @@
         background-color: #fff;
         padding: 0;
         max-width: 1554px;
+        margin: auto;
         padding: 14px 0;
 
         div {
             text-align: center;
             width: 393px;
             padding: 0;
+        }
+    }
+}
 
-            h3 {
-                margin-bottom: 25px;
+@media only screen and (max-width: 1919px) and (min-width: 1024px) {
+    .about-us__wrapper {
+        @include block-pos-laptop;
+    }
+
+    .about-us {
+        padding: 40px 0 25px;
+
+        div {
+            width: 262px;
+            max-height: 295px;
+
+            &:first-child {
+                width: 291px;
+                padding-top: 6px;
+                max-height: 342px;
+
+                h3 {
+                    @include font-params (700, 24px, 29px);
+                    color: #F98600;
+                    margin-bottom: 17px;
+                }
+
+                p {
+                    @include font-params (500, 21px, 29px);
+                }
             }
 
             &:last-child {
                 h3 {
-                    margin-bottom: 58px;
+                    margin-bottom: 51px;
+                }
+            }
+
+            img {
+                width: 100px;
+                height: 100px;
+                margin-bottom: 25px;
+            }
+
+            h3 {
+                @include font-params (700, 22px, 27px);
+                color: #F98600;
+                margin-bottom: 24px;
+            }
+
+            p {
+                @include font-params (500, 20px, 24px);
+            }
+        }
+    }
+
+    .about-us-add {
+        .about-us {
+            max-width: 764px;
+            padding: 11px 0px;
+
+            div {
+                width: 262px;
+                padding-top: 2px;
+
+                img {
+                    width: 90px;
+                    height: 90px;
+                    margin-bottom: 23px;
+                }
+
+                &:last-child {
+                    width: 275px;
+
+                    img {
+                        height: 80px;
+                        margin-bottom: 33px;
+                    }
+
+                    h3 {
+                        margin-bottom: 21px;
+                    }
+                }
+
+                h3 {
+                    @include font-params (700, 22px, 27px);
+                    margin-bottom: 21px;
+                }
+
+                p {
+                    @include font-params (500, 20px, 24px);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 280px) {
+    .about-us__wrapper {
+        background: linear-gradient(to bottom,#fff 37%, #F98600 37%);
+    }
+
+    .about-us {
+        @include block-pos-mobile;
+        background-color: #fff;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        div {
+            width: 330px;
+            text-align: center;
+            padding-top: 9px;
+            margin-bottom: 15px;
+
+            &:first-child {
+                width: 599px;
+                text-align: start;
+                padding-top: 0;
+
+                h3 {
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    max-width: 330px;
+                    margin: 0;
+                }
+            }
+
+            img {
+                margin-bottom: 15px;
+                width: 50px;
+            }
+
+            h3 {
+                @include font-params (700, 16px, 19px);
+                color: #F98600;
+                margin-bottom: 10px;
+                max-width: 330px;
+            }
+
+            p {
+                @include font-params (600, 13px, 19px);
+                max-width: 198px;
+                margin: auto;
+            }
+        }
+    }
+
+    .about-us-add {
+        background-color: #F98600;
+        .about-us {
+            justify-content: space-around;
+            background-color: #fff;
+            padding: 0;
+            max-width: 330px;
+            padding: 14px 0;
+
+            div {
+                text-align: center;
+                width: 330px;
+                padding: 0;
+                margin-bottom: 15px;
+
+                h3 {
+                    max-width: 198px;
+                    margin: auto;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    max-width: 198px;
+                    margin: auto;
                 }
             }
         }
