@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ce1b3f5e.css",
-    "main.js": "/static/js/main.f3299cc0.js",
+    "main.css": "/static/css/main.c3146da1.css",
+    "main.js": "/static/js/main.9a3d4461.js",
     "static/media/authorization-image.png": "/static/media/authorization-image.9e47db32dde459c5e98a.png",
     "static/media/main-page-photo.png": "/static/media/main-page-photo.85c76657c971cfab92e0.png",
     "static/media/agreement-icon.svg": "/static/media/agreement-icon.5b42d957510763815d56.svg",
@@ -15,21 +15,22 @@
     "static/media/cart-logo.svg": "/static/media/cart-logo.9195ab3bb4d7b265eddb.svg",
     "static/media/phone-icon.svg": "/static/media/phone-icon.c52895f3cb8e0dd58887.svg",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/accordion-arrow.svg": "/static/media/accordion-arrow.109195dbd7a7b2093682.svg",
     "static/media/view-password.svg": "/static/media/view-password.7c20a7abd38b50ad4af6.svg",
     "static/media/user-logo.svg": "/static/media/user-logo.3e5addd06676c462b7e2.svg",
-    "index.html": "/index.html",
     "static/media/editor-icon.svg": "/static/media/editor-icon.e8c46709b694fcdda14d.svg",
     "static/media/arrow-prev.svg": "/static/media/arrow-prev.cfa66b8cd3459952b3ac.svg",
     "static/media/arrow-next.svg": "/static/media/arrow-next.fc6e3110ba2e9b3b74df.svg",
     "static/media/mail-icon.svg": "/static/media/mail-icon.4ce75dc7de44350d083d.svg",
+    "index.html": "/index.html",
     "static/media/working-hours-icon.svg": "/static/media/working-hours-icon.c789ea1dcc24d6fd24e9.svg",
     "static/media/private-icon.svg": "/static/media/private-icon.0221c920f519930bae27.svg",
     "static/media/select-arrow.svg": "/static/media/select-arrow.7ec31814a14d8146821a.svg",
-    "main.ce1b3f5e.css.map": "/static/css/main.ce1b3f5e.css.map",
-    "main.f3299cc0.js.map": "/static/js/main.f3299cc0.js.map"
+    "main.c3146da1.css.map": "/static/css/main.c3146da1.css.map",
+    "main.9a3d4461.js.map": "/static/js/main.9a3d4461.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce1b3f5e.css",
-    "static/js/main.f3299cc0.js"
+    "static/css/main.c3146da1.css",
+    "static/js/main.9a3d4461.js"
   ]
 }
