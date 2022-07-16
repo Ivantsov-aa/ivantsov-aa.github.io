@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.0ceafa7a.css",
-    "main.js": "/static/js/main.7115e286.js",
+    "main.css": "/static/css/main.be4b2ad7.css",
+    "main.js": "/static/js/main.477ef2a5.js",
     "static/media/authorization-image.png": "/static/media/authorization-image.9e47db32dde459c5e98a.png",
     "static/media/main-page-photo.png": "/static/media/main-page-photo.85c76657c971cfab92e0.png",
     "static/media/agreement-icon.svg": "/static/media/agreement-icon.5b42d957510763815d56.svg",
     "static/media/order-icon.svg": "/static/media/order-icon.333ce5ffd0f1a969f1a8.svg",
     "static/media/hidden-password.svg": "/static/media/hidden-password.00932d6c3ed70f3c2a70.svg",
+    "static/media/hidden-button.svg": "/static/media/hidden-button.2d29628f3bac52131356.svg",
     "static/media/back-call-logo.svg": "/static/media/back-call-logo.a149bd66505b80f44702.svg",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -15,6 +16,7 @@
     "static/media/cart-logo.svg": "/static/media/cart-logo.9195ab3bb4d7b265eddb.svg",
     "static/media/phone-icon.svg": "/static/media/phone-icon.c52895f3cb8e0dd58887.svg",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/accordion-catalog-arrow.svg": "/static/media/accordion-catalog-arrow.0526a55d2848b828ef6a.svg",
     "static/media/accordion-arrow.svg": "/static/media/accordion-arrow.109195dbd7a7b2093682.svg",
     "static/media/view-password.svg": "/static/media/view-password.7c20a7abd38b50ad4af6.svg",
     "static/media/user-logo.svg": "/static/media/user-logo.3e5addd06676c462b7e2.svg",
@@ -25,12 +27,13 @@
     "index.html": "/index.html",
     "static/media/working-hours-icon.svg": "/static/media/working-hours-icon.c789ea1dcc24d6fd24e9.svg",
     "static/media/private-icon.svg": "/static/media/private-icon.0221c920f519930bae27.svg",
+    "static/media/apply-input.svg": "/static/media/apply-input.1c2d160a37031194afae.svg",
     "static/media/select-arrow.svg": "/static/media/select-arrow.7ec31814a14d8146821a.svg",
-    "main.0ceafa7a.css.map": "/static/css/main.0ceafa7a.css.map",
-    "main.7115e286.js.map": "/static/js/main.7115e286.js.map"
+    "main.be4b2ad7.css.map": "/static/css/main.be4b2ad7.css.map",
+    "main.477ef2a5.js.map": "/static/js/main.477ef2a5.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ceafa7a.css",
-    "static/js/main.7115e286.js"
+    "static/css/main.be4b2ad7.css",
+    "static/js/main.477ef2a5.js"
   ]
 }
