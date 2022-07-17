@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a6b06e1a.css",
-    "main.js": "/static/js/main.a55d41dd.js",
+    "main.css": "/static/css/main.49ed50a5.css",
+    "main.js": "/static/js/main.689af073.js",
     "static/media/authorization-image.png": "/static/media/authorization-image.9e47db32dde459c5e98a.png",
     "static/media/main-page-photo.png": "/static/media/main-page-photo.85c76657c971cfab92e0.png",
     "static/media/agreement-icon.svg": "/static/media/agreement-icon.5b42d957510763815d56.svg",
@@ -18,6 +18,7 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "static/media/accordion-catalog-arrow.svg": "/static/media/accordion-catalog-arrow.0526a55d2848b828ef6a.svg",
     "static/media/accordion-arrow.svg": "/static/media/accordion-arrow.109195dbd7a7b2093682.svg",
+    "static/media/log-out-icon.svg": "/static/media/log-out-icon.f5584b1711a65c42b815.svg",
     "static/media/view-password.svg": "/static/media/view-password.7c20a7abd38b50ad4af6.svg",
     "static/media/user-logo.svg": "/static/media/user-logo.3e5addd06676c462b7e2.svg",
     "static/media/editor-icon.svg": "/static/media/editor-icon.e8c46709b694fcdda14d.svg",
@@ -29,11 +30,11 @@
     "static/media/private-icon.svg": "/static/media/private-icon.0221c920f519930bae27.svg",
     "static/media/apply-input.svg": "/static/media/apply-input.1c2d160a37031194afae.svg",
     "static/media/select-arrow.svg": "/static/media/select-arrow.7ec31814a14d8146821a.svg",
-    "main.a6b06e1a.css.map": "/static/css/main.a6b06e1a.css.map",
-    "main.a55d41dd.js.map": "/static/js/main.a55d41dd.js.map"
+    "main.49ed50a5.css.map": "/static/css/main.49ed50a5.css.map",
+    "main.689af073.js.map": "/static/js/main.689af073.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6b06e1a.css",
-    "static/js/main.a55d41dd.js"
+    "static/css/main.49ed50a5.css",
+    "static/js/main.689af073.js"
   ]
 }
